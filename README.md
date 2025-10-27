@@ -1,21 +1,57 @@
-# React + TypeScript + Vite
+# Gym Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web app to track my activity at the gym.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## Target Device
 
-## Deploy Your Own
+This application is designed to run on an Apple Watch, which means it is optimized for a very small screen.
 
-Deploy your own Vite project with Vercel.
+## Tech Stack
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+- Vercel
+- Vite
+- React
+- Tailwind
+- Supabase
 
-_Live Example: https://vite-react-example.vercel.app_
+## Getting Started
 
-### Deploying From Your Terminal
+To run this project locally, follow these steps:
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+1.  **Clone the repository:**
 
-```shell
-$ vercel
-```
+    ```bash
+    git clone <your-repository-url>
+    cd gym-tracker
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Set up Supabase (via Vercel):**
+
+    The recommended setup for this project is to use the Vercel-Supabase integration.
+
+      * In your project's Vercel dashboard, go to the **Storage** tab and create a new **Supabase** database.
+      * After the database is created, Vercel will provide you with a set of environment variables.
+      * Link your local project to your Vercel project by running:
+        ```bash
+        vercel link
+        ```
+      * Pull the environment variables to your local project. This will create a `.env.local` file with the correct keys.
+        ```bash
+        vercel env pull .env.local
+        ```
+      * The key variables for the frontend are `VITE_PUBLIC_SUPABASE_URL` and `VITE_PUBLIC_SUPABASE_ANON_KEY`.
+
+    ```
+    VITE_PUBLIC_SUPABASE_URL="YOUR_SUPABASE_URL_FROM_VERCEL"
+    VITE_PUBLIC_SUPABASE_ANON_KEY="YOUR_SUPABASE_ANON_KEY_FROM_VERCEL"
+    ```
+4.  **Run the app**
+    ```bash
+    npm run dev
+    ```
