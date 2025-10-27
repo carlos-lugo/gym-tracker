@@ -58,13 +58,13 @@ function App() {
           <div>
             <h2 className="text-3xl font-bold mb-1">New Session</h2>
             <div className="flex flex-col space-y-2">
-              <button onClick={() => handleSessionTypeClick('legs')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-2xl">
+              <button onClick={() => handleSessionTypeClick('legs')} className="bg-gray-800 text-white font-bold py-3 px-4 rounded-lg text-2xl">
                 Legs
               </button>
-              <button onClick={() => handleSessionTypeClick('back')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-2xl">
+              <button onClick={() => handleSessionTypeClick('back')} className="bg-gray-800 text-white font-bold py-3 px-4 rounded-lg text-2xl">
                 Back
               </button>
-              <button onClick={() => handleSessionTypeClick('chest')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-2xl">
+              <button onClick={() => handleSessionTypeClick('chest')} className="bg-gray-800 text-white font-bold py-3 px-4 rounded-lg text-2xl">
                 Chest
               </button>
             </div>
