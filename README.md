@@ -6,6 +6,16 @@ A simple web app to track my activity at the gym.
 
 This application is designed to run on an Apple Watch, which means it is optimized for a very small screen.
 
+## App Functionality
+
+- **No Authentication:** The app does not require user authentication.
+- **Default View:** When the page is opened, it displays the latest training session.
+- **Training Sessions:** There are three types of training sessions: "Legs," "Back," and "Chest."
+- **Registering a New Session:**
+  - A button is available to register a new session.
+  - Clicking this button reveals three options (buttons) to choose the new session type.
+  - When a session is registered, the current date is automatically recorded with it.
+
 ## Tech Stack
 
 - Vercel
