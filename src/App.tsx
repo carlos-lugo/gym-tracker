@@ -56,26 +56,26 @@ function App() {
         {error && <p className="text-red-500">{error}</p>}
         {isAddingSession ? (
           <div>
-            <h2 className="text-2xl font-bold mb-1">New Session</h2>
+            <h2 className="text-3xl font-bold mb-1">New Session</h2>
             <div className="flex flex-col space-y-2">
-              <button onClick={() => handleSessionTypeClick('legs')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-xl">
+              <button onClick={() => handleSessionTypeClick('legs')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-2xl">
                 Legs
               </button>
-              <button onClick={() => handleSessionTypeClick('back')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-xl">
+              <button onClick={() => handleSessionTypeClick('back')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-2xl">
                 Back
               </button>
-              <button onClick={() => handleSessionTypeClick('chest')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-xl">
+              <button onClick={() => handleSessionTypeClick('chest')} className="bg-gray-800 text-white font-bold py-2 px-4 rounded-lg text-2xl">
                 Chest
               </button>
             </div>
           </div>
         ) : (
           <div>
-            <h2 className="text-2xl font-bold mb-1">Latest Session</h2>
+            <h2 className="text-3xl font-bold mb-1">Latest Session</h2>
             {latestSession ? (
               <div className="bg-gray-800 p-2 rounded-lg">
-                <p className="text-2xl font-bold">{latestSession.session_type}</p>
-                <p className="text-xl">{new Date(latestSession.created_at).toLocaleDateString()}</p>
+                <p className="text-3xl font-bold">{latestSession.session_type}</p>
+                <p className="text-2xl">{new Date(latestSession.created_at).toLocaleDateString()}</p>
               </div>
             ) : (
               <p>No sessions yet.</p>
