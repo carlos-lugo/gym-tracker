@@ -56,15 +56,14 @@ function App() {
         {error && <p className="text-red-500">{error}</p>}
         {isAddingSession ? (
           <div>
-            <h2 className="text-3xl font-bold mb-1">New Session</h2>
             <div className="flex flex-col space-y-2">
-              <button onClick={() => handleSessionTypeClick('legs')} className="bg-gray-800 text-white font-bold py-3 px-4 rounded-lg text-2xl">
+              <button onClick={() => handleSessionTypeClick('legs')} className="bg-gray-800 text-white font-bold py-6 px-4 rounded-lg text-2xl">
                 Legs
               </button>
-              <button onClick={() => handleSessionTypeClick('back')} className="bg-gray-800 text-white font-bold py-3 px-4 rounded-lg text-2xl">
+              <button onClick={() => handleSessionTypeClick('back')} className="bg-gray-800 text-white font-bold py-6 px-4 rounded-lg text-2xl">
                 Back
               </button>
-              <button onClick={() => handleSessionTypeClick('chest')} className="bg-gray-800 text-white font-bold py-3 px-4 rounded-lg text-2xl">
+              <button onClick={() => handleSessionTypeClick('chest')} className="bg-gray-800 text-white font-bold py-6 px-4 rounded-lg text-2xl">
                 Chest
               </button>
             </div>
@@ -80,7 +79,7 @@ function App() {
             ) : (
               <p>No sessions yet.</p>
             )}
-            <button onClick={handleRegisterClick} className="mt-2 bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-xl">
+            <button onClick={handleRegisterClick} className="mt-2 bg-blue-600 text-white font-bold py-6 px-4 rounded-full text-xl">
               Register New Session
             </button>
           </div>
